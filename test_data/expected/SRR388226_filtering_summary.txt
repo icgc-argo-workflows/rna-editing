@@ -1,0 +1,2 @@
+analysisid	raw	quality_filtering	RMSK_filtering	SPLICE_filtering	dbSNP_filtering	SOMATIC_filtering	final
+SRR388226	148	139	0	0	0	0	9

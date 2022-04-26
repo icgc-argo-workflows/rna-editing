@@ -1,0 +1,1 @@
+/home/yangyang/work/rna_editing/rna_editing/main.nf

@@ -1,0 +1,11 @@
+Apr-25 10:50:02.460 [main] DEBUG nextflow.cli.Launcher - $> nextflow run checker_tmp.nf --in ./input/SRR388226_chr1.json
+Apr-25 10:50:02.663 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.10.3
+Apr-25 10:50:02.760 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: Not a valid project name: checker_tmp.nf
+	at nextflow.scm.AssetManager.resolveName(AssetManager.groovy:261)
+	at nextflow.scm.AssetManager.build(AssetManager.groovy:131)
+	at nextflow.scm.AssetManager.<init>(AssetManager.groovy:109)
+	at nextflow.cli.CmdRun.getScriptFile(CmdRun.groovy:366)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:264)
+	at nextflow.cli.Launcher.run(Launcher.groovy:480)
+	at nextflow.cli.Launcher.main(Launcher.groovy:639)

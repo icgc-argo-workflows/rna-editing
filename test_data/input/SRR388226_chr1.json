@@ -1,0 +1,18 @@
+{
+  "sample": "SRR388226",
+  "bam_file": "/home/yangyang/work/rna_editing/test_data/input/SRR388226_chr1.bam",
+  "publish_dir": "/home/yangyang/work/rna_editing/test_data/expected",
+  "src_dir": "/home/yangyang/work/rna_editing",
+  "ref_genome_fa": "/home/yangyang/work/rna_editing/test_data/resources_tiny/reference_genome/genome.fa",
+  "snp_datasets_file": "/home/yangyang/work/rna_editing/test_data/resources_tiny/RNA-editing_combined_dbsnp.txt",
+  "cohort_somatic_maf": "/home/yangyang/work/rna_editing/test_data/resources_tiny/cohort.snv.maf",
+  "snp_position_file": "/home/yangyang/work/rna_editing/test_data/resources_tiny/snp_position.txt",
+  "splicesites_pos_file": "/home/yangyang/work/rna_editing/test_data/resources_tiny/gencode.v30lift37.splicesites.pos.txt",
+  "TCGA_somatic_file" : "/home/yangyang/work/rna_editing/test_data/resources_tiny/mc3_somatic_snp_cufoff2",
+  "rmsk_region_file" : "/home/yangyang/work/rna_editing/test_data/resources_tiny/rmsk_region.gtf",
+  "cohort_somatic_gtf": "/home/yangyang/work/rna_editing/test_data/resources_tiny/somatic.sorted.gtf.gz",
+  "rmsk_file": "/home/yangyang/work/rna_editing/test_data/resources_tiny/rmsk.sorted.gtf.gz",
+  "snp151_file": "/home/yangyang/work/rna_editing/test_data/resources_tiny/snp151.sorted.gtf.gz",
+  "rediportal_file": "/home/yangyang/work/rna_editing/test_data/resources_tiny/atlas.gtf.gz",
+  "splicesites_gtf_file": "/home/yangyang/work/rna_editing/test_data/resources_tiny/gencode.v30lift37.splicesites.sorted.gtf.gz",
+}

@@ -1,0 +1,146 @@
+USAGE: python REDItoolDenovo.py [options]
+Options:
+-i              BAM file
+-I              Sort input BAM file
+-f              Reference in fasta file
+-k              List of chromosomes to skip separated by comma or file
+-t              Number of threads [1]
+-o              Output folder [rediFolder_116032472]
+-F              Internal folder name [null]
+-b              Use input distribution file
+-a              Fisher Tail [l, r, t] [default l] [l=left_tail, r=right_tail, t=two_tail]
+-c              Min. read coverage [10]
+-q              Min. quality score [30]
+-m              Min. mapping quality score [30]*
+-O              Min. homoplymeric length [5]
+-s              Infer strand (for strand oriented reads) [1]
+-g              Strand inference type 1:maxValue 2:useConfidence [1]
+-x              Strand confidence [0.70]
+-G              Infer strand by gff annotation (must be sorted, otherwise use -X)
+-X              Sort annotation files
+-K              File with positions to exclude
+-e              Exclude multi hits
+-d              Exclude duplicates
+-l              Select significant sites
+-V              Significant value [0.05]
+-w              Statistical test [BH, BO, NO] [default BH] [BH=Benjamini, BO=Bonferroni, NO=No Correction]
+-U              Use specific substitutions separated by comma [example: AG,TC]
+-p              Use paired concardant reads only
+-u              Consider mapping quality
+-T              Trim x bases up and y bases down per read [0-0]
+-B              Blat folder for correction
+-W              Remove substitutions in homopolymeric regions
+-v              Min. num. of reads supporting the variation [3]
+-n              Min. editing frequency [0.1]
+-E              Exclude positions with multiple changes
+-P              File containing splice sites annotations
+-r              Num. of bases near splice sites to explore [4]
+-h              Print this help
+-H              No Table Header
+
+
+USAGE: python REDItoolDnaRNA.py [options]
+Options:
+-i              RNA-Seq BAM file
+-j              DNA-Seq BAM file(s separated by comma) or folder
+-I              Sort input RNA-Seq BAM file
+-J              Sort input DNA-Seq BAM file
+-f              Reference in fasta file
+-C              Base interval to explore [100000]
+-k              List of chromosomes to skip separated by comma or file
+-t              Number of threads [1]
+-Y              Work Only On Region: chrxx:start-end (positions are distributed by the number of threads)
+-o              Output folder [rediFolder_174598568]
+-F              Internal folder name [null]
+-M              Save a list of columns with quality scores
+-c              Min. read coverage (dna,rna) [10,10]
+-q              Min. quality score (dna,rna) [30,30]
+-m              Min. mapping quality score (dna,rna) [30,30]*
+-O              Min. homoplymeric length (dna,rna) [5,5]
+-s              Infer strand (for strand oriented reads) [1]
+-g              Strand inference type 1:maxValue 2:useConfidence [1]
+-x              Strand confidence [0.70]
+-S              Strand correction
+-G              Infer strand by GFF annotation (must be GFF and sorted, otherwise use -X)
+-K              GFF File with positions to exclude (must be GFF and sorted, otherwise use -X)
+-T              Work only on given GFF positions (must be GFF and sorted, otherwise use -X)
+-X              Sort annotation files
+-e              Exclude multi hits in RNA-Seq
+-E              Exclude multi hits in DNA-Seq
+-d              Exclude duplicates in RNA-Seq
+-D              Exclude duplicates in DNA-Seq
+-p              Use paired concardant reads only in RNA-Seq
+-P              Use paired concardant reads only in DNA-Seq
+-u              Consider mapping quality in RNA-Seq
+-U              Consider mapping quality in DNA-Seq
+-a              Trim x bases up and y bases down per read [0-0] in RNA-Seq
+-A              Trim x bases up and y bases down per read [0-0] in DNA-Seq
+-b              Blat file for correction in RNA-Seq
+-B              Blat file for correction in DNA-Seq
+-l              Remove substitutions in homopolymeric regions in RNA-Seq
+-L              Remove substitutions in homopolymeric regions in DNA-Seq
+-v              Min. num. of reads supporting the variation [3] for RNA-Seq
+-n              Min. editing frequency [0.1] for RNA-Seq
+-N              Min. variation frequency [0.1] for DNA-Seq
+-z              Exclude positions with multiple changes in RNA-Seq
+-Z              Exclude positions with multiple changes in DNA-Seq
+-W              Select RNA-Seq positions with defined changes (separated by comma ex: AG,TC) [default all]
+-R              Exclude invariant RNA-Seq positions
+-V              Exclude sites not supported by DNA-Seq
+-w              File containing splice sites annotations
+-r              Num. of bases near splice sites to explore [4]
+-H              No Table Header
+--gzip  Gzip output files
+-h              Print this help
+--help
+--reads Get reads containing reference mismatches
+--addP  Extract reads alignments with reference mismatches in bed3 format, it requires --reads
+--rmIndels      Remove positions with Indels in surrounding 5 bases
+
+*This value may change according to the aligner:
+        - For Bowtie use 255
+        - For Bowtie2 use 40
+        - For BWA use 30
+        - For RNA-STAR use 255
+        - For HiSAT2 use 60
+        - For Tophat1 use 255
+        - For Tophat2 use 50
+        - For GSNAP use 30
+
+USAGE: python REDItoolKnown.py [options]
+Options:
+-i              BAM file
+-I              Sort input BAM file
+-f              Reference in fasta file
+-l              List of known RNA editing events
+-C              Base interval to explore [100000]
+-k              List of chromosomes to skip separated by comma or file
+-t              Number of threads [1]
+-o              Output folder [rediFolder_302137025]
+-F              Internal folder name [null]
+-c              Min. read coverage [10]
+-q              Min. quality score [30]
+-m              Min. mapping quality score [30]*
+-O              Min. homoplymeric length [5]
+-s              Infer strand (for strand oriented reads) [1]
+-g              Strand inference type 1:maxValue 2:useConfidence [1]
+-x              Strand confidence [0.70]
+-S              Strand correction
+-G              Infer strand by gff annotation (must be sorted, otherwise use -X)
+-X              Sort annotation files
+-K              File with positions to exclude
+-e              Exclude multi hits
+-d              Exclude duplicates
+-p              Use paired concardant reads only
+-u              Consider mapping quality
+-T              Trim x bases up and y bases down per read [0-0]
+-B              Blat file for correction
+-U              Remove substitutions in homopolymeric regions
+-v              Min. num. of reads supporting the variation [3]
+-n              Min. editing frequency [0.1]
+-E              Exclude positions with multiple changes
+-P              File containing splice sites annotations
+-r              Num. of bases near splice sites to explore [4]
+-H              No Table Header
+-h              Print this help
+

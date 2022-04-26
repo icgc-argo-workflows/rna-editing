@@ -1,0 +1,14 @@
+{
+  "sequencing_files": [ "ffa7767e7d2f6205ecf971a40ccdea44.bam" ],
+  "publish_dir": "output-ffa7767e7d2f6205ecf971a40ccdea44/",
+  "ref_genome_fa": "../reference/tiny-grch38-chr11-530001-537000.fa",
+  "snp_datasets_file": "PCAWG/RNA-editing_combined_dbsnp.txt",
+  "cohort_somatic_maf": "somatic.sorted.gtf.gz",
+  "rmsk_file": "rmsk.sorted.gtf.gz",
+  "snp151_file": "/snp151.sorted.gtf.gz",
+  "rediportal_file": "rediportal/atlas.gtf.gz",
+  "splicesites_gtf_file": "gencode.v30lift37.splicesites.sorted.gtf.gz"
+}
+
+
+
